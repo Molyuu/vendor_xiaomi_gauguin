@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AppsList>
+    <Apps>
+        <appsnum>5</appsnum>
+    </Apps>
+    <!--type is used for force AF_TRIGGER type
+      type = 0 means ANDROID_CONTROL_AF_TRIGGER_IDLE
+      type = 1 means ANDROID_CONTROL_AF_TRIGGER_START
+      type = 2 means ANDROID_CONTROL_AF_TRIGGER_CANCEL
+    -->
+    <Apps>
+        <name>com.jingdong.app.mall</name>
+        <type>1</type>>
+        <frame>30</frame>
+    </Apps>
+    <Apps>
+        <name>com.sina.weibo</name>
+        <type>1</type>>
+        <frame>30</frame>
+    </Apps>
+    <Apps>
+        <name>air.tv.douyu.android</name>
+        <type>1</type>>
+        <frame>30</frame>
+    </Apps>
+    <Apps>
+        <name>com.ss.android.lark.kami</name>
+        <type>1</type>>
+        <frame>30</frame>
+    </Apps>
+    <Apps>
+        <name>com.xiaomi.channel</name>
+        <type>0</type>>
+        <frame>30</frame>
+    </Apps>
+</AppsList>
