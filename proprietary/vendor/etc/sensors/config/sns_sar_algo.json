@@ -1,0 +1,57 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "IDP", "GAUGUIN"],
+    "soc_id": ["339", "355", "356", "361", "365", "366", "394", "434", "459"]
+  },
+  "sar_algo": {
+    "owner": "sar_algo",
+    ".params":{
+      "owner": "sar_algo",
+        "threshold1": {
+          "ver": "3", "type": "flt", "data": "50"
+        },
+        "threshold2": {
+          "ver": "3", "type": "flt", "data": "800"
+        },
+        "threshold3": {
+          "ver": "3", "type": "flt", "data": "800"
+        },
+        "threshold4": {
+          "ver": "3", "type": "flt", "data": "2000"
+        },
+        "threshold5": {
+          "ver": "3", "type": "flt", "data": "2000"
+        },
+        "use_acc_gyro": {
+          "ver": "3", "type": "flt", "data": "0"
+        },
+        "use_qmi": {
+          "ver": "3", "type": "flt", "data": "0"
+        }
+    },
+    ".params_reg2":{
+      "owner": "sar_algo",
+        "threshold1": {
+          "ver": "2", "type": "flt", "data": "2000"
+        },
+        "threshold2": {
+          "ver": "2", "type": "flt", "data": "2000"
+        },
+        "threshold3": {
+          "ver": "2", "type": "flt", "data": "2000"
+        },
+        "threshold4": {
+          "ver": "2", "type": "flt", "data": "2000"
+        }
+    },
+    ".params_step":{
+      "owner": "sar_algo",
+        "usestep": {
+          "ver": "0", "type": "flt", "data": "1"
+        },
+        "stepcount": {
+          "ver": "0", "type": "flt", "data": "100"
+        }
+    }
+  }
+}
