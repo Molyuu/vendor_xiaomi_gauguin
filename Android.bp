@@ -132,6 +132,30 @@ android_app_import {
 }
 
 android_app_import {
+	name: "HotwordEnrollmentOKGoogleHEXAGON",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentXGoogleHEXAGON",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "ImsRcsService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
@@ -196,6 +220,13 @@ dex_import {
 }
 
 dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "com.qti.dpmframework",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
@@ -220,13 +251,6 @@ dex_import {
 	name: "qti-telephony-common",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.ims.connection-V1.0-java",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -300,33 +324,6 @@ prebuilt_etc_xml {
 	name: "vendor.qti.gnss@4.0-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.misys@1.0",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.misys@2.0",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.misys@3.0",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
